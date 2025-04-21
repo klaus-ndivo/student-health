@@ -1,0 +1,53 @@
+/* Slider container */
+.relative {
+    height: 70vh; /* Set the height to 70% of the viewport */
+    position: relative;
+}
+
+#slider {
+    display: flex;
+    width: 300%; /* Adjust width to fit all slides horizontally */
+    transform: translateX(0); /* Start at the first slide */
+    height: 100%; /* Ensure the slider takes the full height of the container */
+}
+
+/* Individual slide */
+#slider > div {
+    width: 100%; /* Each slide takes up 100% of the container width */
+    flex-shrink: 0;
+    height: 100%; /* Ensure each slide takes the full height of the slider */
+    position: relative;
+}
+
+/* Images inside the slider */
+#slider img {
+    width: 100%; /* Ensure the image spans the full width */
+    height: 100%; /* Ensure the image spans the full height */
+    object-fit: cover; /* Make the image cover the entire slide area */
+}
+
+/* Static image container */
+.relative {
+    height: 70vh; /* Set the height to 70% of the viewport */
+    position: relative;
+}
+
+/* Image styling */
+.relative img {
+    width: 100%; /* Ensure the image spans the full width */
+    height: 100%; /* Ensure the image spans the full height */
+    object-fit: cover; /* Make the image cover the entire container */
+}
+
+/* Text overlay */
+.slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}

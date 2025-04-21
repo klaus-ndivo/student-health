@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Health Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-2xl font-bold text-blue-600">HealthEd</a>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="profile.html" class="text-gray-700 hover:text-blue-600 transition">Profile</a></li>
+                <li><a href="literature-review.html" class="text-gray-700 hover:text-blue-600 transition">Literature Review</a></li>
+                <li><a href="stories.html" class="text-gray-700 hover:text-blue-600 transition">Stories</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <ul class="space-y-4 px-4 py-4">
+                <li><a href="profile.html" class="block text-gray-700 hover:text-blue-600 transition">Profile</a></li>
+                <li><a href="literature-review.html" class="block text-gray-700 hover:text-blue-600 transition">Literature Review</a></li>
+                <li><a href="stories.html" class="block text-gray-700 hover:text-blue-600 transition">Stories</a></li>
+                <li><a href="contact.html" class="block text-gray-700 hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Static Image -->
+    <div class="relative overflow-hidden">
+        <div class="relative w-full">
+            <img src="Images/pexels-mikhail-nilov-7929277.jpg" alt="Static Image" class="w-full object-cover">
+            <div class="absolute inset-0 bg-blue-900 bg-opacity-50 flex items-center justify-center">
+                <h1 class="text-4xl font-bold text-white text-center px-4">
+                    "Empowering Students Through Health and Education – Discover the Connection Between Well-Being and Academic Success"
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center">
+        <!-- Text Content -->
+        <div class="md:w-1/2 mb-6 md:mb-0">
+            <h2 class="text-3xl font-bold text-blue-600 mb-6">Why Health Matters for Academic Success</h2>
+            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                For many students, academic success feels like a constant uphill battle. But what if the real challenge isn’t just about studying harder? Mental and physical health issues like stress, burnout, and sleep deprivation can quietly undermine your ability to focus, retain information, and perform well in school.
+            </p>
+            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                Stress from exams, lack of sleep from late-night study sessions, and the pressure to balance school with other responsibilities can take a toll on your mind and body. These challenges don’t just affect grades—they impact your confidence, motivation, and overall well-being.
+            </p>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                This website is here to explore the connection between health and learning, offering insights, stories, and strategies to help students, teachers, and school leaders create healthier, more supportive environments for academic success.
+            </p>
+        </div>
+        <!-- Image -->
+        <div class="md:w-1/2">
+            <img src="Images/pexels-pavel-danilyuk-7943997.jpg" alt="Health and Learning" class="rounded-lg shadow-md">
+        </div>
+    </div>
+
+    <!-- Research Highlights Section -->
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-center text-blue-600 mb-8">Research Highlights</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Physical Health Card -->
+            <a href="physical-health.html" class="block">
+                <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                    <img src="Images/icons8-physical-therapy-30.png" alt="Physical Health" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Physical Health</h3>
+                    <p class="text-gray-600">Explore the impact of physical activity, nutrition, and lifestyle choices on overall health and well-being.</p>
+                </div>
+            </a>
+            <!-- Mental Health Card -->
+            <a href="mental-health.html" class="block">
+                <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                    <img src="Images/icons8-mental-health-30.png" alt="Mental Health" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Mental Health</h3>
+                    <p class="text-gray-600">Understand the importance of mental health awareness, stress management, and emotional well-being.</p>
+                </div>
+            </a>
+            <!-- Socioeconomic Factors Card -->
+            <a href="socioeconomic-factors.html" class="block">
+                <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                    <img src="Images/icons8-economic-growth-32.png" alt="Socioeconomic Factors" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Socioeconomic Factors</h3>
+                    <p class="text-gray-600">Analyze how income, education, and social determinants influence health outcomes.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bar Chart Section -->
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-center text-blue-600 mb-8">Physical Activity vs GPA</h2>
+        <p class="text-center text-gray-600 mb-4">
+            This chart shows the trend that more hours of physical activity per week are associated with better academic performance.
+        </p>
+        <div class="w-full max-w-2xl mx-auto">
+            <canvas id="activityGPAChart" class="w-full h-64"></canvas>
+        </div>
+    </div>
+
+    
+
+    <!-- Testimonial Section with Cool Cards -->
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-center text-blue-600 mb-8">Student Testimonials</h2>
+        <div class="flex space-x-4 overflow-x-auto scrollbar-hide">
+            <!-- Card 1 -->
+            <div class="bg-blue-50 rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300 min-w-[300px]">
+                <p class="text-lg italic text-gray-700 mb-4">
+                    "Participating in regular physical activity has not only improved my academic performance but also boosted my mental health and overall well-being."
+                </p>
+                <h3 class="text-xl font-semibold text-blue-600">- Alex Johnson</h3>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-blue-50 rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300 min-w-[300px]">
+                <p class="text-lg italic text-gray-700 mb-4">
+                    "Engaging in mental health awareness programs has helped me manage stress and stay focused on my studies."
+                </p>
+                <h3 class="text-xl font-semibold text-blue-600">- Sarah Lee</h3>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-blue-50 rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300 min-w-[300px]">
+                <p class="text-lg italic text-gray-700 mb-4">
+                    "Understanding the impact of socioeconomic factors has motivated me to advocate for equal opportunities in education."
+                </p>
+                <h3 class="text-xl font-semibold text-blue-600">- Michael Brown</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Research Reflections Section -->
+    <div class="relative container mx-auto px-4 py-16 bg-cover bg-center rounded-lg shadow-md" style="background-image: url('Images/research-reflections-bg.jpg');">
+        <div class="absolute inset-0 bg-blue-900 bg-opacity-50 rounded-lg"></div> <!-- Overlay for better text readability -->
+        <div class="relative text-center text-white space-y-6">
+            <h2 class="text-3xl font-bold mb-6">Research Reflections</h2>
+            <p class="text-lg">
+                "Through this research, I have come to understand the profound impact that physical activity has on both mental and academic performance. It has been enlightening to see how even small changes in daily routines can lead to significant improvements in overall well-being."
+            </p>
+            <p class="text-lg">
+                "Exploring the role of socioeconomic factors has deepened my appreciation for the importance of equitable access to resources. This reflection has motivated me to advocate for policies that promote inclusivity and equal opportunities for all students."
+            </p>
+            <p class="text-lg">
+                "As part of a student-led research project, I plan to combine academic sources and real student stories to create a website that uses writing, images, charts, and infographics to present findings. The goal is to make the website clear, engaging, and helpful for people at all knowledge levels, ensuring that the research is accessible and impactful for students, educators, and policymakers alike."
+            </p>
+        </div>
+    </div>
+
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Bar Chart Data
+        const ctx = document.getElementById('activityGPAChart').getContext('2d');
+        const activityGPAChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['0-2 hrs', '3-5 hrs', '6-8 hrs', '9-11 hrs', '12+ hrs'], // X-axis labels
+                datasets: [{
+                    label: 'Average GPA',
+                    data: [2.5, 2.8, 3.2, 3.5, 3.8], // Y-axis data
+                    backgroundColor: [
+                        '#3b82f6', // Blue
+                        '#60a5fa', // Light Blue
+                        '#93c5fd', // Lighter Blue
+                        '#bfdbfe', // Even Lighter Blue
+                        '#dbeafe'  // Lightest Blue
+                    ],
+                    borderColor: '#1e40af', // Dark Blue
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true, // Maintain aspect ratio for smaller space
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Hours of Physical Activity per Week',
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Average GPA',
+                            font: {
+                                size: 14
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-600 text-white py-8 mt-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <!-- Site Credits -->
+                <div class="text-center md:text-left">
+                    <p class="text-sm">&copy; 2025 Student Health Showcase. All rights reserved.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="flex space-x-6">
+                    <a href="#top" class="text-sm hover:underline">Home</a>
+                    <a href="#research-highlights" class="text-sm hover:underline">Research Highlights</a>
+                    <a href="#chart" class="text-sm hover:underline">Chart</a>
+                    <a href="#testimonials" class="text-sm hover:underline">Testimonials</a>
+                    <a href="#reflections" class="text-sm hover:underline">Reflections</a>
+                </div>
+                <!-- Contact Email -->
+                <div class="text-center md:text-right">
+                    <p class="text-sm">Contact us: <a href="mailto:info@studenthealth.com" class="hover:underline">info@studenthealth.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

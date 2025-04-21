@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Physical Health</title>
+</head>
+<body>
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-2xl font-bold text-blue-600">HealthEd</a>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="profile.html" class="text-gray-700 hover:text-blue-600 transition">Profile</a></li>
+                <li><a href="literature-review.html" class="text-gray-700 hover:text-blue-600 transition">Literature Review</a></li>
+                <li><a href="stories.html" class="text-gray-700 hover:text-blue-600 transition">Stories</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Reflections</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <ul class="space-y-4 px-4 py-4">
+                <li><a href="profile.html" class="block text-gray-700 hover:text-blue-600 transition">Profile</a></li>
+                <li><a href="literature-review.html" class="block text-gray-700 hover:text-blue-600 transition">Literature Review</a></li>
+                <li><a href="stories.html" class="block text-gray-700 hover:text-blue-600 transition">Stories</a></li>
+                <li><a href="contact.html" class="block text-gray-700 hover:text-blue-600 transition">Reflections</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Physical Health Section -->
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">Physical Health and Learning</h1>
+        <p class="text-gray-700 text-lg leading-relaxed text-center mb-8">
+            Physical health is a cornerstone of academic success. Sleep, exercise, and overall fitness play a vital role in enhancing cognitive function, memory, and focus.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Sleep Card -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Sleep</h2>
+                <p class="text-gray-700 text-lg">
+                    Adequate sleep is essential for memory consolidation and cognitive performance. Students who get enough sleep are better equipped to retain information and stay focused during classes and exams.
+                </p>
+            </div>
+            <!-- Exercise Card -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Exercise</h2>
+                <p class="text-gray-700 text-lg">
+                    Regular exercise improves blood flow to the brain, enhancing mental clarity and reducing stress. Activities like walking, running, or yoga can boost mood and energy levels, making it easier to tackle academic challenges.
+                </p>
+            </div>
+            <!-- Fitness Card -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Fitness</h2>
+                <p class="text-gray-700 text-lg">
+                    Maintaining overall fitness through a balanced diet and physical activity supports long-term health and academic performance. Fit students are more likely to have higher energy levels and better concentration.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

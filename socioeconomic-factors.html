@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Socioeconomic Factors</title>
+</head>
+<body>
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-2xl font-bold text-blue-600">HealthEd</a>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="profile.html" class="text-gray-700 hover:text-blue-600 transition">Profile</a></li>
+                <li><a href="literature-review.html" class="text-gray-700 hover:text-blue-600 transition">Literature Review</a></li>
+                <li><a href="stories.html" class="text-gray-700 hover:text-blue-600 transition">Stories</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Reflections</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <ul class="space-y-4 px-4 py-4">
+                <li><a href="profile.html" class="block text-gray-700 hover:text-blue-600 transition">Profile</a></li>
+                <li><a href="literature-review.html" class="block text-gray-700 hover:text-blue-600 transition">Literature Review</a></li>
+                <li><a href="stories.html" class="block text-gray-700 hover:text-blue-600 transition">Stories</a></li>
+                <li><a href="contact.html" class="block text-gray-700 hover:text-blue-600 transition">Reflections</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Socioeconomic Factors Section -->
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">Socioeconomic Factors and Learning</h1>
+        <p class="text-gray-700 text-lg leading-relaxed text-center mb-8">
+            Socioeconomic factors play a significant role in shaping a student's academic journey. Income, family stability, and access to support are key elements that influence learning outcomes.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Income Card -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Income</h2>
+                <p class="text-gray-700 text-lg">
+                    A family's income level can determine access to educational resources, extracurricular activities, and a conducive learning environment. Students from low-income families may face challenges such as limited access to technology or study materials.
+                </p>
+            </div>
+            <!-- Family Stability Card -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Family Stability</h2>
+                <p class="text-gray-700 text-lg">
+                    A stable family environment provides emotional support and consistency, which are crucial for academic success. Family instability, such as frequent relocations or conflicts, can disrupt a student's focus and performance.
+                </p>
+            </div>
+            <!-- Access to Support Card -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Access to Support</h2>
+                <p class="text-gray-700 text-lg">
+                    Access to academic and emotional support, such as tutoring, counseling, or mentorship programs, can significantly enhance a student's learning experience. Support systems help students overcome challenges and stay motivated.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

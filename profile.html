@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-2xl font-bold text-blue-600">HealthEd</a>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="profile.html" class="text-gray-700 hover:text-blue-600 transition">Profile</a></li>
+                <li><a href="literature-review.html" class="text-gray-700 hover:text-blue-600 transition">Literature Review</a></li>
+                <li><a href="stories.html" class="text-gray-700 hover:text-blue-600 transition">Stories</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Reflections</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <ul class="space-y-4 px-4 py-4">
+                <li><a href="profile.html" class="block text-gray-700 hover:text-blue-600 transition">Profile</a></li>
+                <li><a href="literature-review.html" class="block text-gray-700 hover:text-blue-600 transition">Literature Review</a></li>
+                <li><a href="stories.html" class="block text-gray-700 hover:text-blue-600 transition">Stories</a></li>
+                <li><a href="contact.html" class="block text-gray-700 hover:text-blue-600 transition">Reflections</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center text-blue-600 mb-8">User Profile</h1>
+        <div class="bg-white shadow-md rounded-lg p-6 max-w-2xl mx-auto">
+            <!-- Profile Picture -->
+            <div class="flex justify-center mb-6">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="w-32 h-32 rounded-full shadow-md">
+            </div>
+            <!-- Profile Details -->
+            <form id="profileForm">
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-lg font-semibold text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" value="John Doe" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" disabled>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-semibold text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" value="johndoe@example.com" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" disabled>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-lg font-semibold text-gray-700">Phone</label>
+                        <input type="tel" id="phone" name="phone" value="+123 456 7890" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" disabled>
+                    </div>
+                    <div>
+                        <label for="address" class="block text-lg font-semibold text-gray-700">Address</label>
+                        <textarea id="address" name="address" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" disabled>123 Main Street, City, Country</textarea>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="text-center mt-6">
+                    <button type="button" id="editButton" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                        Edit Profile
+                    </button>
+                    <button type="submit" id="saveButton" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition hidden">
+                        Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Researcher Bio Section -->
+        <div class="bg-white shadow-md rounded-lg p-6 max-w-2xl mx-auto mt-8">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">Researcher Bio</h2>
+            <p class="text-gray-700 text-lg">
+                As a student who has personally experienced the challenges of balancing academic performance with mental and physical health, I have always been curious about the connection between health and learning outcomes. During my school years, I faced significant stress and academic pressure, which motivated me to explore how health interventions could improve both well-being and academic success.
+            </p>
+            <p class="text-gray-700 text-lg mt-4">
+                My goal is to share actionable insights with students, teachers, and school leaders to foster healthier learning environments. By understanding the role of physical activity, mental health, and socioeconomic factors, I aim to contribute to creating strategies that promote academic excellence while prioritizing student well-being.
+            </p>
+        </div>
+
+        <!-- Purpose of Research Project -->
+        <div class="bg-white shadow-md rounded-lg p-6 max-w-2xl mx-auto mt-8">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">Purpose of the Research Project</h2>
+            <p class="text-gray-700 text-lg">
+                This research project aims to explore how health impacts school performance by combining academic research, surveys, interviews, and real student experiences. By examining the connections between physical health, mental well-being, and academic outcomes, the project seeks to provide a comprehensive understanding of the challenges students face. The ultimate goal is to make this research accessible and actionable, offering valuable insights for students, educators, and school leaders to create healthier, more supportive learning environments.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const editButton = document.getElementById('editButton');
+        const saveButton = document.getElementById('saveButton');
+        const inputs = document.querySelectorAll('#profileForm input, #profileForm textarea');
+
+        // Enable editing when "Edit Profile" is clicked
+        editButton.addEventListener('click', () => {
+            inputs.forEach(input => input.disabled = false); // Enable all inputs
+            editButton.classList.add('hidden'); // Hide the Edit button
+            saveButton.classList.remove('hidden'); // Show the Save button
+        });
+
+        // Handle form submission (Save Changes)
+        document.getElementById('profileForm').addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent form from refreshing the page
+            inputs.forEach(input => input.disabled = true); // Disable all inputs
+            editButton.classList.remove('hidden'); // Show the Edit button
+            saveButton.classList.add('hidden'); // Hide the Save button
+            alert('Profile details saved successfully!');
+        });
+    </script>
+</body>
+</html>
