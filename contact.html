@@ -73,5 +73,14 @@
             Or email us directly at <a href="mailto:info@healthed.com" class="text-blue-600 hover:underline">info@healthed.com</a>.
         </p>
     </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
